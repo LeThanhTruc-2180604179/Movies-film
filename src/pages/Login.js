@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className="auth-page">
       <div className="auth-container">
-        <h1 className="auth-title">Login to Entertainment Hub</h1>
+        <h1 className="auth-title">NETFLIX FAKE</h1>
         <LoginForm />
       </div>
     </div>

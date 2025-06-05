@@ -2,9 +2,9 @@ import React from 'react';
 import MovieCard from '../components/common/MovieCard';
 import { useApp } from '../context/AppContext';
 import Loading from '../components/common/Loading';
-import Slider from 'react-slick'; // Import Slider từ react-slick
-import 'slick-carousel/slick/slick.css'; // Import CSS của slick
-import 'slick-carousel/slick/slick-theme.css'; // Import theme CSS
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Home = () => {
   const { trending, movies, tvSeries, loading, searchQuery, searchContent } = useApp();
@@ -13,7 +13,6 @@ const Home = () => {
     return <Loading text="Loading content..." />;
   }
 
-  // If there's a search query, show search results
   if (searchQuery.trim()) {
     const searchResults = searchContent(searchQuery);
     
@@ -45,7 +44,6 @@ const Home = () => {
       {/* Hero Section - Banner Slider */}
       {trending.length > 0 && (
         <section className="hero-section">
-          <h1 className="page-title">Trending Now</h1>
           <div className="hero-slider">
             <Slider
               dots={true}
@@ -54,7 +52,7 @@ const Home = () => {
               slidesToShow={1}
               slidesToScroll={1}
               autoplay={true}
-              autoplaySpeed={3000} // Tự động chuyển sau 5 giây
+              autoplaySpeed={5000}
             >
               {trending.map((item) => (
                 <div key={item.id} className="banner-slide">
@@ -65,16 +63,15 @@ const Home = () => {
                   />
                   <div className="banner-content">
                     <h2>{item.title}</h2>
-                    <div className="banner-meta">
-                      <span>{item.year}</span>
-                      <span>{item.category}</span>
-                      {item.duration && <span>{item.duration}</span>}
-                    </div>
                     <p className="banner-description">
                       {item.description.length > 150
                         ? `${item.description.substring(0, 150)}...`
                         : item.description}
                     </p>
+                    <div className="banner-buttons">
+                      <button className="play-btn">Play</button>
+                      <button className="mylist-btn">My List</button>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -103,7 +100,7 @@ const Home = () => {
           <span className="section-count">{movies.length} movies</span>
         </div>
         <div className="content-grid">
-          {movies.slice(0, 6).map((item) => (
+          {movies.slice(0, 20).map((item) => (
             <MovieCard key={item.id} item={item} />
           ))}
         </div>
@@ -116,7 +113,7 @@ const Home = () => {
           <span className="section-count">{tvSeries.length} series</span>
         </div>
         <div className="content-grid">
-          {tvSeries.slice(0, 6).map((item) => (
+          {tvSeries.slice(0, 20).map((item) => (
             <MovieCard key={item.id} item={item} />
           ))}
         </div>
@@ -126,3 +123,4 @@ const Home = () => {
 };
 
 export default Home;
+

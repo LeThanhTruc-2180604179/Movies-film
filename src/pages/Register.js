@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className="auth-page">
       <div className="auth-container">
-        <h1 className="auth-title">Join Entertainment Hub</h1>
+        <h1 className="auth-title">Register</h1>
         <RegisterForm />
       </div>
     </div>

@@ -1,269 +1,613 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "The Batman",
-            "category": "Movie",
-            "year": 2022,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
-            "youtubeId": "mqqft2x_Aa4",
-            "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
-            "genre": [
-                "Action",
-                "Crime",
-                "Drama"
-            ],
-            "duration": "2h 56m"
-        },
-        {
-            "id": 2,
-            "title": "Spider-Man: No Way Home",
-            "category": "Movie",
-            "year": 2021,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
-            "youtubeId": "JfVOs4VSpmA",
-            "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Fantasy"
-            ],
-            "duration": "2h 28m"
-        },
-        {
-            "id": 3,
-            "title": "Dune",
-            "category": "Movie",
-            "year": 2021,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/s1FhiNWwkmIdF5CYmUTe3JhKCq4.jpg",
-            "youtubeId": "8g18jFHCLXk",
-            "description": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Drama"
-            ],
-            "duration": "2h 35m"
-        },
-        {
-            "id": 4,
-            "title": "Black Widow",
-            "category": "Movie",
-            "year": 2021,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
-            "youtubeId": "ybji16u608U",
-            "description": "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Thriller"
-            ],
-            "duration": "2h 14m"
-        },
-        {
-            "id": 5,
-            "title": "Fast & Furious 9",
-            "category": "Movie",
-            "year": 2021,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg",
-            "youtubeId": "FUK2kdPsBws",
-            "description": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
-            "genre": [
-                "Action",
-                "Crime",
-                "Thriller"
-            ],
-            "duration": "2h 23m"
-        },
-        {
-            "id": 6,
-            "title": "Top Gun: Maverick",
-            "category": "Movie",
-            "year": 2022,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
-            "youtubeId": "giXco2jaZ_4",
-            "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
-            "genre": [
-                "Action",
-                "Drama"
-            ],
-            "duration": "2h 10m"
-        }
-    ],
-    "tvSeries": [
-        {
-            "id": 7,
-            "title": "Stranger Things",
-            "category": "TV Series",
-            "year": 2016,
-            "rating": "TV-14",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
-            "youtubeId": "b9EkMc79ZSU",
-            "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
-            "genre": [
-                "Drama",
-                "Fantasy",
-                "Horror"
-            ],
-            "seasons": 4,
-            "episodes": 42
-        },
-        {
-            "id": 8,
-            "title": "The Mandalorian",
-            "category": "TV Series",
-            "year": 2019,
-            "rating": "TV-14",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/BbNvKCuEF4SRzFXR16aK6ISFtl.jpg",
-            "youtubeId": "aOC8E8z_ifw",
-            "description": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Fantasy"
-            ],
-            "seasons": 3,
-            "episodes": 24
-        },
-        {
-            "id": 9,
-            "title": "The Crown",
-            "category": "TV Series",
-            "year": 2016,
-            "rating": "TV-MA",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/1M876KPjulVwppEpldhdc8V4o68.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/4XQ2rlxHr14tHXBP5CwmTNTjNg.jpg",
-            "youtubeId": "JWtnJjn6ng0",
-            "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
-            "genre": [
-                "Drama",
-                "History"
-            ],
-            "seasons": 6,
-            "episodes": 60
-        },
-        {
-            "id": 10,
-            "title": "The Witcher",
-            "category": "TV Series",
-            "year": 2019,
-            "rating": "TV-MA",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/7HrvdJW5UKJQi6KuRs1EIq6xKAZ.jpg",
-            "youtubeId": "ndl1W4ltcmg",
-            "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Drama"
-            ],
-            "seasons": 3,
-            "episodes": 24
-        },
-        {
-            "id": 11,
-            "title": "House of the Dragon",
-            "category": "TV Series",
-            "year": 2022,
-            "rating": "TV-MA",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/17TTFFAXcg1hKAi5sScbpjl99H9.jpg",
-            "youtubeId": "DotnJ7wyKns",
-            "description": "The story of the Targaryen civil war that took place about 300 years before events portrayed in Game of Thrones.",
-            "genre": [
-                "Action",
-                "Adventure",
-                "Drama"
-            ],
-            "seasons": 1,
-            "episodes": 10
-        },
-        {
-            "id": 12,
-            "title": "Wednesday",
-            "category": "TV Series",
-            "year": 2022,
-            "rating": "TV-14",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
-            "bannerImage": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
-            "youtubeId": "Di310WS8zLk",
-            "description": "Wednesday Addams is sent to Nevermore Academy, a supernatural boarding school where she attempts to master her psychic powers.",
-            "genre": [
-                "Comedy",
-                "Crime",
-                "Family"
-            ],
-            "seasons": 1,
-            "episodes": 8
-        }
-    ],
-    "trending": [
-          {
-            "id": 12,
-            "title": "Squid Game",
-            "category": "TV Series",
-            "year": 2025,
-            "rating": "TV-MA",
-            "thumbnail": "https://img.upanh.tv/2025/05/29/Squid-Game-3.jpeg",
-            "bannerImage": "https://img.upanh.tv/2025/05/29/squid-game-season-3-announcment-banner.jpg",
-            "youtubeId": "oqxAJKy0ii4",
-            "description": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting cash prize, but the stakes are deadly.",
-            "genre": [
-                "Drama",
-                "Thriller",
-                "Mystery"
-            ],
-            "seasons": 2,
-            "episodes": 9
-        },
-        {
-            "id": 13,
-            "title": "Oppenheimer",
-            "category": "Movie",
-            "year": 2023,
-            "rating": "R",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
-            "bannerImage": "https://img.upanh.tv/2025/05/29/Header_Oppenheimer_2for25_720x.webp",
-            "youtubeId": "uYPbbksJxIg",
-            "description": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-            "genre": [
-                "Biography",
-                "Drama",
-                "History"
-            ],
-            "duration": "3h 0m"
-        },
-        {
-            "id": 14,
-            "title": "Barbie",
-            "category": "Movie",
-            "year": 2023,
-            "rating": "PG-13",
-            "thumbnail": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
-            "bannerImage": "https://img.upanh.tv/2025/05/29/barbie-teaser-trailer2-banner.jpg",
-            "youtubeId": "pBk4NYhWNMM",
-            "description": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.",
-            "genre": [
-                "Adventure",
-                "Comedy",
-                "Fantasy"
-            ],
-            "duration": "1h 54m"
-        }
-      
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Batman",
+      "category": "Movie",
+      "year": 2022,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
+      "youtubeId": "mqqft2x_Aa4",
+      "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "duration": "2h 56m"
+    },
+    {
+      "id": 2,
+      "title": "Spider-Man: No Way Home",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+      "youtubeId": "JfVOs4VSpmA",
+      "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "duration": "2h 28m"
+    },
+    {
+      "id": 3,
+      "title": "Dune",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/s1FhiNWwkmIdF5CYmUTe3JhKCq4.jpg",
+      "youtubeId": "8g18jFHCLXk",
+      "description": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "duration": "2h 35m"
+    },
+    {
+      "id": 4,
+      "title": "Black Widow",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+      "youtubeId": "ybji16u608U",
+      "description": "Natasha Romanoff confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "duration": "2h 14m"
+    },
+    {
+      "id": 5,
+      "title": "Fast & Furious 9",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg",
+      "youtubeId": "FUK2kdPsBws",
+      "description": "Dom and the crew must take on an international terrorist who turns out to be Dom and Mia's estranged brother.",
+      "genre": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "duration": "2h 23m"
+    },
+    {
+      "id": 6,
+      "title": "Top Gun: Maverick",
+      "category": "Movie",
+      "year": 2022,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+      "youtubeId": "giXco2jaZ_4",
+      "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission.",
+      "genre": [
+        "Action",
+        "Drama"
+      ],
+      "duration": "2h 10m"
+    },
+    {
+      "id": 15,
+      "title": "Everything Everywhere All at Once",
+      "category": "Movie",
+      "year": 2022,
+      "rating": "R",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc._V1_FMjpg_UX1000_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc._V1_FMjpg_UX1000_.jpg",
+      "youtubeId": "wxN1T1uxQ2g",
+      "description": "A middle-aged Chinese immigrant is swept up into an insane adventure where she alone can save existence by exploring other universes.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "duration": "2h 19m"
+    },
+    {
+      "id": 16,
+      "title": "The Matrix Resurrections",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "R",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BMDMyNDIzYzMtZTMyMy00NjUyLWI3Y2MtYzYzOGE1NzQ1MTBiXkEyXkFqcGc._V1_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BMDMyNDIzYzMtZTMyMy00NjUyLWI3Y2MtYzYzOGE1NzQ1MTBiXkEyXkFqcGc._V1_.jpg",
+      "youtubeId": "nNpvWBuTfrc",
+      "description": "Return to a world of two realities: one, everyday life; the other, what lies behind it. Neo must choose to follow the white rabbit once more.",
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "duration": "2h 28m"
+    },
+    {
+      "id": 17,
+      "title": "No Time to Die",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "PG-13",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/636b04c3114c9d4a86576c33-no-time-to-die-james-bond-007-movie.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/636b04c3114c9d4a86576c33-no-time-to-die-james-bond-007-movie.jpg",
+      "youtubeId": "BIhNsAtPb24",
+      "description": "James Bond has left active service. His peace is short-lived when an old friend from the CIA asks for help, leading to a showdown with a mysterious villain.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "duration": "2h 43m"
+    },
+    {
+      "id": 18,
+      "title": "Avatar: The Way of Water",
+      "category": "Movie",
+      "year": 2022,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/94xxm5701CzOd3m3yCby0M3pLEt.jpg",
+      "youtubeId": "d9MyW72ELq0",
+      "description": "Jake Sully lives with his newfound family on Pandora. When a familiar threat returns, Jake must work with Neytiri to protect their planet.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "duration": "3h 12m"
+    },
+    {
+      "id": 19,
+      "title": "Knives Out",
+      "category": "Movie",
+      "year": 2019,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/4HWAQu28e2yaWrtupFPwqwblU.jpg",
+      "youtubeId": "qGqiHJTsVkQ",
+      "description": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Mystery"
+      ],
+      "duration": "2h 10m"
+    },
+    {
+      "id": 20,
+      "title": "Parasite",
+      "category": "Movie",
+      "year": 2019,
+      "rating": "R",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/jjHioPw3V3Vv9vA3hV2S8r3l.jpg",
+      "youtubeId": "5xH0HfJHsaY",
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
+      "duration": "2h 12m"
+    },
+    {
+      "id": 21,
+      "title": "The Northman",
+      "category": "Movie",
+      "year": 2022,
+      "rating": "R",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BYzgwM2JiY2MtNWQ5OC00NDc1LWExMjYtYmY2YjViZmViYWM5XkEyXkFqcGc._V1_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BYzgwM2JiY2MtNWQ5OC00NDc1LWExMjYtYmY2YjViZmViYWM5XkEyXkFqcGc._V1_.jpg",
+      "youtubeId": "oMSdFM12hOw",
+      "description": "A young Viking prince embarks on a quest to avenge his father's murder.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "duration": "2h 17m"
+    },
+    {
+      "id": 22,
+      "title": "Joker",
+      "category": "Movie",
+      "year": 2019,
+      "rating": "R",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/71-6ttsgzVL._AC_SL1500_-1.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/images.jpg",
+      "youtubeId": "t433PEQGErc",
+      "description": "An aging comedian with a failed career descends into madness, turning to a life of crime and chaos in Gotham City.",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "duration": "2h 2m"
+    },
+    {
+      "id": 23,
+      "title": "Tenet",
+      "category": "Movie",
+      "year": 2020,
+      "rating": "PG-13",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/Tenet_poster_VN.jpeg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/Tenet_poster_VN.jpeg",
+      "youtubeId": "AZGcmvrTX9M",
+      "description": "A secret agent embarks on a time-bending mission to prevent World War III.",
+      "genre": [
+        "Action",
+        "Sci-Fi",
+        "Thriller"
+      ],
+      "duration": "2h 30m"
+    },
+    {
+      "id": 24,
+      "title": "The Suicide Squad",
+      "category": "Movie",
+      "year": 2021,
+      "rating": "R",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/kb4s0ML0iVZlG6wAKbbs9NAm6X.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/jtB6K2s4W7.jpg",
+      "youtubeId": "eg5ciqQh2Sk",
+      "description": "A group of supervillains are recruited to go on a dangerous mission to destroy a Nazi-era laboratory.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "duration": "2h 12m"
+    }
+  ],
+  "tvSeries": [
+    {
+      "id": 7,
+      "title": "Stranger Things",
+      "category": "TV Series",
+      "year": 2016,
+      "rating": "TV-14",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "youtubeId": "b9EkMc79ZSU",
+      "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "seasons": 4,
+      "episodes": 42
+    },
+    {
+      "id": 8,
+      "title": "The Mandalorian",
+      "category": "TV Series",
+      "year": 2019,
+      "rating": "TV-14",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/BbNvKCuEF4SRzFXR16aK6ISFtl.jpg",
+      "youtubeId": "aOC8E8z_ifw",
+      "description": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "seasons": 3,
+      "episodes": 24
+    },
+    {
+      "id": 9,
+      "title": "The Crown",
+      "category": "TV Series",
+      "year": 2016,
+      "rating": "TV-MA",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/1M876KPjulVwppEpldhdc8V4o68.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/4XQ2rlxHr14tHXBP5CwmTNTjNg.jpg",
+      "youtubeId": "JWtnJjn6ng0",
+      "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+      "genre": [
+        "Drama",
+        "History"
+      ],
+      "seasons": 6,
+      "episodes": 60
+    },
+    {
+      "id": 10,
+      "title": "The Witcher",
+      "category": "TV Series",
+      "year": 2019,
+      "rating": "TV-MA",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/7HrvdJW5UKJQi6KuRs1EIq6xKAZ.jpg",
+      "youtubeId": "ndl1W4ltcmg",
+      "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "seasons": 3,
+      "episodes": 24
+    },
+    {
+      "id": 11,
+      "title": "House of the Dragon",
+      "category": "TV Series",
+      "year": 2022,
+      "rating": "TV-MA",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/17TTFFAXcg1hKAi5sScbpjl99H9.jpg",
+      "youtubeId": "DotnJ7wyKns",
+      "description": "The story of the Targaryen civil war that took place about 300 years before events portrayed in Game of Thrones.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "seasons": 1,
+      "episodes": 10
+    },
+    {
+      "id": 12,
+      "title": "Wednesday",
+      "category": "TV Series",
+      "year": 2022,
+      "rating": "TV-14",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+      "bannerImage": "https://image.tmdb.org/t/p/w1280/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "youtubeId": "Di310WS8zLk",
+      "description": "Wednesday Addams is sent to Nevermore Academy, a supernatural boarding school where she attempts to master her psychic powers.",
+      "genre": [
+        "Comedy",
+        "Crime",
+        "Family"
+      ],
+      "seasons": 1,
+      "episodes": 8
+    },
+    {
+      "id": 25,
+      "title": "Breaking Bad",
+      "category": "TV Series",
+      "year": 2008,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/51fWOBx3agL._AC_UF8941000_QL80_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/51fWOBx3agL._AC_UF8941000_QL80_.jpg",
+      "youtubeId": "HhesaQXLuRY",
+      "description": "A high school chemistry teacher turned methamphetamine producer partners with a former student to secure his family's future.",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "seasons": 5,
+      "episodes": 62
+    },
+    {
+      "id": 26,
+      "title": "Better Call Saul",
+      "category": "TV Series",
+      "year": 2015,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/s-l1200.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/s-l1200.jpg",
+      "youtubeId": "Z5i0Q2Y3x0o",
+      "description": "The trials and tribulations of criminal lawyer Saul Goodman before he became Walter White's lawyer.",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "seasons": 6,
+      "episodes": 63
+    },
+    {
+      "id": 27,
+      "title": "The Boys",
+      "category": "TV Series",
+      "year": 2019,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BMWJlN2U5MzItNjU4My00NTM2LWFjOWUtOWFiNjg3ZTMxZDY1XkEyXkFqcGc._V1_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BMWJlN2U5MzItNjU4My00NTM2LWFjOWUtOWFiNjg3ZTMxZDY1XkEyXkFqcGc._V1_.jpg",
+      "youtubeId": "tcrNsIaQkb4",
+      "description": "A group of vigilantes takes on corrupt superheroes who abuse their powers.",
+      "genre": [
+        "Action",
+        "Comedy",
+        "Drama"
+      ],
+      "seasons": 4,
+      "episodes": 32
+    },
+    {
+      "id": 28,
+      "title": "Loki",
+      "category": "TV Series",
+      "year": 2021,
+      "rating": "TV-14",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/online_9.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/online_9.jpg",
+      "youtubeId": "nW948Va-l10",
+      "description": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of Avengers: Endgame.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "seasons": 2,
+      "episodes": 12
+    },
+    {
+      "id": 29,
+      "title": "Yellowstone",
+      "category": "TV Series",
+      "year": 2018,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BYzE2ODQ0NmQtYmMxMS00MGRlLTgwOGEtYjRkN2FkYmZlN2JlXkEyXkFqcGc._V1_FMjpg_UX1000_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BYzE2ODQ0NmQtYmMxMS00MGRlLTgwOGEtYjRkN2FkYmZlN2JlXkEyXkFqcGc._V1_FMjpg_UX1000_.jpg",
+      "youtubeId": "M1zF0x3R2Wc",
+      "description": "The Dutton family fights to maintain control of their vast Montana ranch amid conflicts with developers, an Indian reservation, and America's first national park.",
+      "genre": [
+        "Drama",
+        "Western"
+      ],
+      "seasons": 5,
+      "episodes": 47
+    },
+    {
+      "id": 30,
+      "title": "Succession",
+      "category": "TV Series",
+      "year": 2018,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc._V1_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc._V1_.jpg",
+      "youtubeId": "E8o0HYO9vOs",
+      "description": "The Roy family controls one of the biggest media and entertainment conglomerates in the world, but their world changes when their father steps back.",
+      "genre": [
+        "Drama"
+      ],
+      "seasons": 4,
+      "episodes": 39
+    },
+    {
+      "id": 31,
+      "title": "Fargo",
+      "category": "TV Series",
+      "year": 2014,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/fargo_1996_original_film_art_6283620e-d4b0-4148-9c9d-260f7452e33c_5000x.webp",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/fargo_1996_original_film_art_6283620e-d4b0-4148-9c9d-260f7452e33c_5000x.webp",
+      "youtubeId": "hYvZ8fU0p2k",
+      "description": "A drifter named Lorne Malvo arrives in small-town Minnesota and influences the population with his malice and violence.",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "seasons": 5,
+      "episodes": 51
+    },
+    {
+      "id": 32,
+      "title": "The Last of Us",
+      "category": "TV Series",
+      "year": 2023,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/_57.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/3c1iu9tjzr1a1.jpg",
+      "youtubeId": "uLtkt8BonwM",
+      "description": "Joel and Ellie, a pair connected through the harshness of a post-apocalyptic world, must survive and rely on each other.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "seasons": 1,
+      "episodes": 9
+    },
+    {
+      "id": 33,
+      "title": "WandaVision",
+      "category": "TV Series",
+      "year": 2021,
+      "rating": "TV-PG",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/A18PWypQpmL.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/A18PWypQpmL.jpg",
+      "youtubeId": "sVBYaW5T3kY",
+      "description": "Wanda Maximoff and Vision, two super-powered beings, live idealized suburban lives but begin to suspect everything is not as it seems.",
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ],
+      "seasons": 1,
+      "episodes": 9
+    },
+    {
+      "id": 34,
+      "title": "Ted Lasso",
+      "category": "TV Series",
+      "year": 2020,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/06/05/MV5BZmI3YWVhM2UtNDZjMC00YTIzLWI2NGUtZWIxODZkZjVmYTg1XkEyXkFqcGc._V1_.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/05/MV5BZmI3YWVhM2UtNDZjMC00YTIzLWI2NGUtZWIxODZkZjVmYTg1XkEyXkFqcGc._V1_.jpg",
+      "youtubeId": "6KO1k5gQd0I",
+      "description": "An American football coach is hired to manage a British soccer team, bringing his optimistic approach to a skeptical team and town.",
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Sport"
+      ],
+      "seasons": 3,
+      "episodes": 34
+    }
+  ],
+  "trending": [
+    {
+      "id": 35,
+      "title": "Squid Game",
+      "category": "TV Series",
+      "year": 2025,
+      "rating": "TV-MA",
+      "thumbnail": "https://img.upanh.tv/2025/05/29/Squid-Game-3.jpeg",
+      "bannerImage": "https://img.upanh.tv/2025/05/29/squid-game-season-3-announcment-banner.jpg",
+      "youtubeId": "oqxAJKy0ii4",
+      "description": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting cash prize, but the stakes are deadly.",
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "seasons": 2,
+      "episodes": 9
+    },
+    {
+      "id": 13,
+      "title": "Oppenheimer",
+      "category": "Movie",
+      "year": 2023,
+      "rating": "R",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/05/29/Header_Oppenheimer_2for25_720x.webp",
+      "youtubeId": "uYPbbksJxIg",
+      "description": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+      "genre": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "duration": "3h 0m"
+    },
+    {
+      "id": 14,
+      "title": "Barbie",
+      "category": "Movie",
+      "year": 2023,
+      "rating": "PG-13",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/05/29/barbie-teaser-trailer2-banner.jpg",
+      "youtubeId": "pBk4NYhWNMM",
+      "description": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.",
+      "genre": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "duration": "1h 54m"
+    }
+  ]
 }

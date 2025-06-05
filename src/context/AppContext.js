@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useAuth } from './AuthContext';
 import data from '../data/data.json';
 
 const AppContext = createContext();
@@ -12,37 +13,49 @@ export const useApp = () => {
 };
 
 export const AppProvider = ({ children }) => {
+  const { user } = useAuth(); // Lấy thông tin user từ AuthContext
   const [movies, setMovies] = useState([]);
   const [tvSeries, setTvSeries] = useState([]);
   const [trending, setTrending] = useState([]);
-  const [bookmarks, setBookmarks] = useState([]);
+  const [bookmarks, setBookmarks] = useState([]); // Không sử dụng useLocalStorage trực tiếp
   const [searchQuery, setSearchQuery] = useState('');
   const [currentVideo, setCurrentVideo] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Tạo key động cho Local Storage dựa trên userId
+  const getBookmarkKey = React.useCallback(() => user ? `bookmarks_${user.id}` : 'bookmarks_guest', [user]);
+
+  // Load bookmarks khi user thay đổi (đăng nhập, đăng xuất)
   useEffect(() => {
-    // Load data from JSON file
+    setLoading(true);
+    const bookmarkKey = getBookmarkKey();
+    try {
+      const savedBookmarks = localStorage.getItem(bookmarkKey);
+      setBookmarks(savedBookmarks ? JSON.parse(savedBookmarks) : []);
+    } catch (error) {
+      console.error(`Error reading bookmarks for ${bookmarkKey}:`, error);
+      setBookmarks([]);
+    }
+    setLoading(false);
+  }, [user, getBookmarkKey]);
+
+  // Lưu bookmarks vào Local Storage khi bookmarks thay đổi
+  useEffect(() => {
+    const bookmarkKey = getBookmarkKey();
+    try {
+      localStorage.setItem(bookmarkKey, JSON.stringify(bookmarks));
+    } catch (error) {
+      console.error(`Error saving bookmarks for ${bookmarkKey}:`, error);
+    }
+  }, [bookmarks, user, getBookmarkKey]);
+
+  // Load dữ liệu từ data.json
+  useEffect(() => {
     setMovies(data.movies || []);
     setTvSeries(data.tvSeries || []);
     setTrending(data.trending || []);
-    
-    // Load bookmarks from localStorage
-    const savedBookmarks = localStorage.getItem('entertainmentBookmarks');
-    if (savedBookmarks) {
-      try {
-        setBookmarks(JSON.parse(savedBookmarks));
-      } catch (error) {
-        console.error('Error loading bookmarks:', error);
-      }
-    }
-    
     setLoading(false);
   }, []);
-
-  // Save bookmarks to localStorage whenever bookmarks change
-  useEffect(() => {
-    localStorage.setItem('entertainmentBookmarks', JSON.stringify(bookmarks));
-  }, [bookmarks]);
 
   const getAllContent = () => {
     return [...movies, ...tvSeries, ...trending];
@@ -75,13 +88,13 @@ export const AppProvider = ({ children }) => {
   };
 
   const toggleBookmark = (item) => {
-    const isBookmarked = bookmarks.some(bookmark => bookmark.id === item.id);
-    
-    if (isBookmarked) {
-      setBookmarks(prev => prev.filter(bookmark => bookmark.id !== item.id));
-    } else {
-      setBookmarks(prev => [...prev, item]);
-    }
+    setBookmarks(prevBookmarks => {
+      const isBookmarked = prevBookmarks.some(bookmark => bookmark.id === item.id);
+      if (isBookmarked) {
+        return prevBookmarks.filter(bookmark => bookmark.id !== item.id);
+      }
+      return [...prevBookmarks, { ...item }];
+    });
   };
 
   const isBookmarked = (itemId) => {
@@ -102,7 +115,6 @@ export const AppProvider = ({ children }) => {
     
     const allContent = getAllContent();
     
-    // Find similar content based on genre
     const recommendations = allContent
       .filter(item => 
         item.id !== currentItem.id && 
@@ -110,7 +122,6 @@ export const AppProvider = ({ children }) => {
       )
       .slice(0, limit);
     
-    // If not enough recommendations, fill with random content
     if (recommendations.length < limit) {
       const remaining = allContent
         .filter(item => 
@@ -135,7 +146,6 @@ export const AppProvider = ({ children }) => {
 
   const getPopularContent = (limit = 10) => {
     const allContent = getAllContent();
-    // Sort by year (newest first) as a simple popularity metric
     return allContent
       .sort((a, b) => b.year - a.year)
       .slice(0, limit);
@@ -149,19 +159,14 @@ export const AppProvider = ({ children }) => {
   };
 
   const value = {
-    // Data
     movies,
     tvSeries,
     trending,
     bookmarks,
     loading,
-    
-    // Current states
     searchQuery,
     setSearchQuery,
     currentVideo,
-    
-    // Methods
     getAllContent,
     getFilteredContent,
     searchContent,

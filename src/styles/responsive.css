@@ -1,11 +1,18 @@
+/* Large screens (1024px and below) */
 @media (max-width: 1024px) {
   .layout {
     flex-direction: column;
   }
 
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
   .sidebar {
     width: 100%;
     height: auto;
+    position: static;
   }
 
   .sidebar-nav {
@@ -18,21 +25,53 @@
   }
 
   .content-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Điều chỉnh để vẫn giữ 6 card trên 1 hàng */
+    gap: 15px;
   }
 
   .dashboard-content {
     grid-template-columns: 1fr;
   }
+
+  .banner-slide {
+    height: 400px;
+  }
+
+  .banner-content {
+    left: 30px;
+    max-width: 500px;
+    padding: 25px;
+  }
+
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1.1rem;
+  }
+
+  .banner-meta {
+    gap: 15px;
+  }
+
+  .banner-meta span {
+    font-size: 0.9rem;
+  }
 }
 
+/* Tablets (768px and below) */
 @media (max-width: 768px) {
   .page {
     padding: 10px;
   }
 
+  .main-content {
+    padding: 10px;
+  }
+
   .movie-card.medium {
-    max-width: 100%;
+    max-width: 180px;
   }
 
   .movie-card.large {
@@ -40,7 +79,20 @@
   }
 
   .card-image {
-    height: 120px;
+    height: 270px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-meta, .genre-tag {
+    font-size: 0.8rem;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Đảm bảo tối đa 5 card trên 1 hàng */
+    gap: 8px;
   }
 
   .filters {
@@ -55,11 +107,56 @@
   .video-player iframe {
     height: 300px;
   }
+
+  .banner-slide {
+    height: 350px;
+  }
+
+  .banner-content {
+    left: 20px;
+    right: 20px;
+    max-width: calc(100% - 40px);
+    padding: 20px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .banner-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .banner-meta {
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .banner-meta span {
+    padding: 4px 10px;
+    font-size: 0.9rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+
+  .auth-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .auth-title {
+    font-size: 1.8rem;
+  }
 }
 
+/* Mobile (480px and below) */
 @media (max-width: 480px) {
   .content-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Tối đa 3 card trên 1 hàng */
+    gap: 6px;
   }
 
   .header-content {
@@ -71,8 +168,20 @@
     max-width: 100%;
   }
 
-  .auth-container {
-    padding: 20px;
+  .movie-card.medium {
+    max-width: 160px;
+  }
+
+  .card-image {
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-meta, .genre-tag {
+    font-size: 0.75rem;
   }
 
   .video-player iframe {
@@ -81,5 +190,55 @@
 
   .recommendations-grid {
     grid-template-columns: 1fr;
+  }
+
+  .banner-slide {
+    height: 300px;
+  }
+
+  .banner-content {
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-meta {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .banner-meta span {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+  }
+
+  .auth-container {
+    padding: 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .auth-link {
+    font-size: 0.8rem;
   }
 }

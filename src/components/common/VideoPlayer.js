@@ -5,7 +5,7 @@ import { useApp } from '../../context/AppContext';
 const VideoPlayer = () => {
   const { currentVideo, closeVideo, toggleBookmark, isBookmarked, getRecommendations, playVideo } = useApp();
   const bookmarked = isBookmarked(currentVideo?.id);
-  const recommendations = getRecommendations(currentVideo, 4);
+  const recommendations = getRecommendations(currentVideo, 10);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -78,26 +78,26 @@ const VideoPlayer = () => {
             <p className="video-description">{currentVideo.description}</p>
           </div>
 
-          {recommendations.length > 0 && (
-            <div className="recommendations">
-              <h3>You might also like</h3>
-              <div className="recommendations-grid">
-                {recommendations.map((item) => (
-                  <div
-                    key={item.id}
-                    className="recommendation-card"
-                    onClick={() => handleRecommendationClick(item)}
-                  >
-                    <img src={item.thumbnail} alt={item.title} />
-                    <div className="recommendation-info">
-                      <h4>{item.title}</h4>
-                      <span>{item.year} • {item.category}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+         {recommendations.length > 0 && (
+  <div className="recommendations">
+    <h3>Có thể bạn sẽ thích</h3>
+    <div className="content-carousel">
+      {recommendations.map((item) => (
+        <div
+          key={item.id}
+          className="recommendation-card"
+          onClick={() => handleRecommendationClick(item)}
+        >
+          <img src={item.thumbnail} alt={item.title} />
+          <div className="recommendation-info">
+            <h4>{item.title}</h4>
+            <span>{item.year} • {item.category}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
         </div>
       </div>
     </div>

@@ -269,6 +269,24 @@
         "Comedy"
       ],
       "duration": "2h 12m"
+    },
+    {
+      "id": 7,
+      "title": "GÀ MẬP BỊ BÊ ĐÊ",
+      "category": "Movie",
+      "year": 2025,
+      "rating": "TV-14",
+      "thumbnail": "https://img.upanh.tv/2025/06/06/Brook_pig_on_the_green_-_geograph.org.uk_-_1444361.jpg",
+      "bannerImage": "https://img.upanh.tv/2025/06/06/Brook_pig_on_the_green_-_geograph.org.uk_-_1444361.jpg",
+      "youtubeId": "xcxTuG-Us8A",
+      "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "genre": [
+        "Drama",
+        "Fantasy",
+        "Horror"
+      ],
+      "seasons": 4,
+      "episodes": 42
     }
   ],
   "tvSeries": [

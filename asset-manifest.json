@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Movies-film/static/css/main.b1a0929b.css",
-    "main.js": "/Movies-film/static/js/main.db665f87.js",
+    "main.js": "/Movies-film/static/js/main.57c8ade2.js",
     "static/js/453.f7338088.chunk.js": "/Movies-film/static/js/453.f7338088.chunk.js",
     "static/media/slick.svg": "/Movies-film/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Movies-film/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/Movies-film/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Movies-film/index.html",
     "main.b1a0929b.css.map": "/Movies-film/static/css/main.b1a0929b.css.map",
-    "main.db665f87.js.map": "/Movies-film/static/js/main.db665f87.js.map",
+    "main.57c8ade2.js.map": "/Movies-film/static/js/main.57c8ade2.js.map",
     "453.f7338088.chunk.js.map": "/Movies-film/static/js/453.f7338088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a0929b.css",
-    "static/js/main.db665f87.js"
+    "static/js/main.57c8ade2.js"
   ]
 }

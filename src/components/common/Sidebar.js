@@ -23,7 +23,7 @@ const Sidebar = () => {
     <div className="sidebar">
      <div className="sidebar-header">
         <img 
-          src="https://img.upanh.tv/2025/05/29/netflix.png" 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/960px-Netflix_2015_logo.svg.png" 
           alt="Movies Film Logo" 
           style={{ 
             width: '200px', 

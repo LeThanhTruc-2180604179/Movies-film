@@ -139,7 +139,7 @@
       "category": "Movie",
       "year": 2021,
       "rating": "PG-13",
-      "thumbnail": "https://images-cdn.ubuy.co.id/636b04c3114c9d4a86576c33-no-time-to-die-james-bond-007-movie.jpg",
+      "thumbnail": "https://cdn.europosters.eu/image/1300/114389.jpg",
       "bannerImage": "https://images-cdn.ubuy.co.id/636b04c3114c9d4a86576c33-no-time-to-die-james-bond-007-movie.jpg",
       "youtubeId": "BIhNsAtPb24",
       "description": "James Bond has left active service. His peace is short-lived when an old friend from the CIA asks for help, leading to a showdown with a mysterious villain.",
@@ -268,24 +268,6 @@
         "Comedy"
       ],
       "duration": "2h 12m"
-    },
-    {
-      "id": 7,
-      "title": "GÀ MẬP BỊ BÊ ĐÊ",
-      "category": "Movie",
-      "year": 2025,
-      "rating": "TV-14",
-      "thumbnail": "https://m.media-amazon.com/images/I/81V0EHAIX+L.jpg",
-      "bannerImage": "https://m.media-amazon.com/images/I/81V0EHAIX+L.jpg",
-      "youtubeId": "xcxTuG-Us8A",
-      "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
-      "genre": [
-        "Drama",
-        "Fantasy",
-        "Horror"
-      ],
-      "seasons": 4,
-      "episodes": 42
     }
   ],
   "tvSeries": [

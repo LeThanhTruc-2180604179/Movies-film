@@ -82,17 +82,9 @@
     height: 270px;
   }
 
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-meta, .genre-tag {
-    font-size: 0.8rem;
-  }
-
   .content-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Đảm bảo tối đa 5 card trên 1 hàng */
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted for better fit */
+    gap: 15px; /* Reduced gap slightly for smaller screens */
   }
 
   .filters {
@@ -155,8 +147,8 @@
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
   .content-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Tối đa 3 card trên 1 hàng */
-    gap: 6px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjusted for mobile */
+    gap: 10px; /* Further reduced gap for smaller screens */
   }
 
   .header-content {
@@ -166,6 +158,127 @@
 
   .search-container {
     max-width: 100%;
+  }
+
+  .movie-card.medium {
+    max-width: 160px;
+  }
+
+  .card-image {
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-meta, .genre-tag {
+    font-size: 0.75rem;
+  }
+
+  .video-player iframe {
+    height: 200px;
+  }
+
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-slide {
+    height: 300px;
+  }
+
+  .banner-content {
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-meta {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .banner-meta span {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+  }
+
+  .auth-container {
+    padding: 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .auth-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile (480px and below) */
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .content-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Tối đa 3 card trên 1 hàng */
+    gap: 6px;
+  }
+
+  .header-content {
+    flex-direction: row; /* Giữ thanh tìm kiếm và avatar trên cùng một hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Căn trái, để avatar và thanh tìm kiếm gần nhau */
+    width: 100%; /* Sử dụng toàn bộ chiều rộng */
+    padding: 10px 0; /* Thêm padding để đẹp hơn */
+  }
+
+  .search-container {
+    max-width: 65%; /* Thu hẹp thanh tìm kiếm xuống 65% chiều rộng */
+    flex: 1; /* Cho phép linh hoạt nhưng giới hạn bởi max-width */
+    margin-right: 10px; /* Thêm khoảng cách với avatar */
+  }
+
+  .search-bar {
+    width: 100%; /* Thanh tìm kiếm chiếm toàn bộ chiều rộng của search-container */
+    padding: 6px 10px; /* Điều chỉnh padding cho gọn hơn trên mobile */
+  }
+
+  .user-profile-dropdown {
+    flex-shrink: 0; /* Ngăn avatar bị co lại */
+    margin: 0; /* Xóa margin không cần thiết */
+  }
+
+  .user-profile-trigger {
+    padding: 0; /* Loại bỏ padding thừa */
+  }
+
+  .user-info {
+    display: none; /* Ẩn thông tin người dùng (chỉ giữ avatar) */
+  }
+
+  .user-avatar {
+    width: 40px; /* Duy trì kích thước avatar */
+    height: 40px;
+    margin: 0; /* Xóa margin không cần thiết */
   }
 
   .movie-card.medium {

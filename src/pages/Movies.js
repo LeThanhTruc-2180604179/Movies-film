@@ -1,3 +1,4 @@
+// Movies.js
 import React, { useState } from 'react';
 import MovieCard from '../components/common/MovieCard';
 import { useApp } from '../context/AppContext';
@@ -88,7 +89,7 @@ const Movies = () => {
 
       {/* Movies Grid */}
       {filteredMovies.length > 0 ? (
-        <div className="content-grid">
+        <div className="content-grid movies-grid">
           {filteredMovies.map((movie) => (
             <MovieCard key={movie.id} item={movie} />
           ))}

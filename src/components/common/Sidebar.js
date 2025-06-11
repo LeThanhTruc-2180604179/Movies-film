@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Film, Tv, Bookmark, User, LogOut } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
+import { Home, Film, Tv, Bookmark, User } from 'lucide-react';
 
 const Sidebar = () => {
   const location = useLocation();
-  const { user, logout } = useAuth();
 
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
@@ -15,13 +13,9 @@ const Sidebar = () => {
     { path: '/dashboard', icon: User, label: 'Your Profile' }
   ];
 
-  const handleLogout = () => {
-    logout();
-  };
-
   return (
     <div className="sidebar">
-     <div className="sidebar-header">
+      <div className="sidebar-header">
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/960px-Netflix_2015_logo.svg.png" 
           alt="Movies Film Logo" 
@@ -53,28 +47,8 @@ const Sidebar = () => {
           );
         })}
       </nav>
-
-      <div className="sidebar-footer">
-        <div className="user-info">
-          <div className="user-avatar">
-            {user?.name?.charAt(0)?.toUpperCase() || 'U'}
-          </div>
-          <div className="user-details">
-            <div className="user-name">{user?.name || 'User'}</div>
-            <div className="user-email">{user?.email}</div>
-          </div>
-        </div>
-        
-        <button onClick={handleLogout} className="logout-btn">
-          <LogOut size={20} />
-          <span>Logout</span>
-        </button>
-      </div>
     </div>
   );
 };
 
-export default Sidebar; 
-
-
-
+export default Sidebar;

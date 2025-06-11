@@ -36,9 +36,10 @@ input, select {
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Điều chỉnh để 6 card trên 1 hàng */
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(15%, 1fr)); /* Percentage-based minimum width */
+  gap: 20px; /* Consistent gap that scales */
   margin-top: 20px;
+  width: 100%; /* Ensure it takes full width of container */
 }
 
 .no-results {

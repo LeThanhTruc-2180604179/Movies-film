@@ -46,7 +46,7 @@ const SearchBar = () => {
         <Search className="search-icon" size={20} />
         <input
           type="text"
-          placeholder="Search for movies, TV series..."
+          placeholder="Search for movies"
           value={localQuery}
           onChange={handleSearch}
           className="search-input"

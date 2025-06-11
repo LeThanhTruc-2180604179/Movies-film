@@ -1,3 +1,4 @@
+// TVSeries.js
 import React, { useState } from 'react';
 import MovieCard from '../components/common/MovieCard';
 import { useApp } from '../context/AppContext';
@@ -91,7 +92,7 @@ const TVSeries = () => {
 
       {/* TV Series Grid */}
       {filteredSeries.length > 0 ? (
-        <div className="content-grid">
+        <div className="content-grid tv-series-grid">
           {filteredSeries.map((series) => (
             <MovieCard key={series.id} item={series} />
           ))}

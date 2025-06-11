@@ -1,3 +1,4 @@
+// Home.js
 import React from 'react';
 import MovieCard from '../components/common/MovieCard';
 import { useApp } from '../context/AppContext';
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
         
         {searchResults.length > 0 ? (
-          <div className="content-grid">
+          <div className="content-grid home-search-grid">
             {searchResults.map((item) => (
               <MovieCard key={item.id} item={item} />
             ))}
@@ -68,10 +69,7 @@ const Home = () => {
                         ? `${item.description.substring(0, 150)}...`
                         : item.description}
                     </p>
-                    <div className="banner-buttons">
-                      <button className="play-btn">Play</button>
-                      <button className="mylist-btn">My List</button>
-                    </div>
+                 
                   </div>
                 </div>
               ))}
@@ -99,7 +97,7 @@ const Home = () => {
           <h2>🎬 Latest Movies</h2>
           <span className="section-count">{movies.length} movies</span>
         </div>
-        <div className="content-grid">
+        <div className="content-grid home-movies-grid">
           {movies.slice(0, 20).map((item) => (
             <MovieCard key={item.id} item={item} />
           ))}
@@ -112,7 +110,7 @@ const Home = () => {
           <h2>📺 Popular TV Series</h2>
           <span className="section-count">{tvSeries.length} series</span>
         </div>
-        <div className="content-grid">
+        <div className="content-grid home-tv-series-grid">
           {tvSeries.slice(0, 20).map((item) => (
             <MovieCard key={item.id} item={item} />
           ))}
@@ -123,4 +121,3 @@ const Home = () => {
 };
 
 export default Home;
-
